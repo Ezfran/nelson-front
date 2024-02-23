@@ -16,10 +16,10 @@
             </div>
         </header>
 
-        <section class="mt-4">
+        <section class="mt-4 flex flex-col gap-4">
 
             <article class="bg-[rgba(18,58,110,255)] mx-4 rounded-2xl py-4 px-2 flex justify-around items-center">
-                <section class=" flex flex-col gap-4 items-end  w-5/12">
+                <section class=" flex flex-col gap-4 items-end ">
                     <div class="flex gap-2">
                         <p class="font-semibold text-white">
                             Miembros
@@ -54,14 +54,19 @@
                         </div>
                     </div>
                 </section>
-                <section class="flex flex-col gap-3 bg-red-200">
-                    <button>
+                <section class="flex flex-col gap-3 items-start">
+                    <button class="w-48 py-2 bg-[rgba(8,35,78,255)] border border-white rounded-full self-center text-white font-semibold">
                         Actividades Diarias
                     </button>
-                    <button>
+                    <button class="w-48 py-2 bg-[rgba(8,35,78,255)] border border-white rounded-full self-center text-white font-semibold">
                         Opciones
                     </button>
                 </section>
+            </article>
+            <article class="bg-[rgba(18,58,110,255)] mx-4 rounded-2xl py-4 px-2 flex justify-around items-center">
+                <header>
+                    
+                </header>
             </article>
 
         </section>
