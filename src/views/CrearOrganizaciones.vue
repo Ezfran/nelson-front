@@ -69,21 +69,25 @@
                     <button @click="changeView('miembros')" 
                     :class="{ 'bg-[rgb(16,100,236)]': currentView === 'miembros', 'bg-transparent': currentView !== 'miembros' }"
                     class="w-full text-center py-1 rounded-full text-white border-2 uppercase">
+                    <i class="fa-solid fa-user-group"></i>
                         Miembros
                     </button>
                     <button @click="changeView('agregar')" 
                     :class="{ 'bg-[rgb(16,100,236)]': currentView === 'agregar', 'bg-transparent': currentView !== 'agregar' }"
                     class="w-full text-center py-1 rounded-full text-white border-2 uppercase">
+                    <i class="fa-solid fa-plus"></i>
                         Agregar
                     </button>
                     <button @click="changeView('actividad')" 
                     :class="{ 'bg-[rgb(16,100,236)]': currentView === 'actividad', 'bg-transparent': currentView !== 'actividad' }"
                     class="w-full text-center py-1 rounded-full text-white border-2 uppercase">
+                    <i class="fa-solid fa-ticket"></i>
                         Actividad
                     </button>
                     <button @click="changeView('puntos')" 
                     :class="{ 'bg-[rgb(16,100,236)]': currentView === 'puntos', 'bg-transparent': currentView !== 'puntos' }"
                     class="w-full text-center py-1 rounded-full text-white border-2 uppercase">
+                    <i class="fa-solid fa-diagram-project"></i>
                         Puntos
                     </button>
 
@@ -100,6 +104,9 @@
                     <div v-if="currentView === 'agregar'" class="relative overflow-x-auto rounded-lg">
                         <h2 class="pb-3 text-lg text-white font-semibold">
                             Jugadores Cercanos
+                            <button class="text-green-500">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
                         </h2>
                         <Agregar/>
                     </div>
