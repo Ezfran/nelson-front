@@ -62,25 +62,25 @@
                     Niveles de las Organizaciones:
                 </p>
                 <div class="flex gap-2 items-center">
-                    <button class="px-4 py-1 border-[1px] text-[rgba(18,58,110,255)] bg-white rounded-full">
+                    <button class="px-4 py-1 text-white bg-[#1ce178] rounded-full">
                         Nivel 1
                     </button>
-                    <button class="px-4 py-1 border-[1px] text-[rgba(18,58,110,255)] bg-white rounded-full">
+                    <button class="px-4 py-1 text-[rgba(18,58,110,255)] bg-white rounded-full">
                         Nivel 2
                     </button>
-                    <button class="px-4 py-1 border-[1px] text-[rgba(18,58,110,255)] bg-white rounded-full">
+                    <button class="px-4 py-1 text-white bg-[#1ce178] rounded-full">
                         Nivel 3
                     </button>
-                    <button class="px-4 py-1 border-[1px] text-[rgba(18,58,110,255)] bg-white rounded-full">
+                    <button class="px-4 py-1 text-[rgba(18,58,110,255)] bg-white rounded-full">
                         Nivel 4
                     </button>
-                    <button class="px-4 py-1 border-[1px] text-[rgba(18,58,110,255)] bg-white rounded-full">
+                    <button class="px-4 py-1 text-white bg-[#1ce178] rounded-full">
                         Nivel 5
                     </button>
                 </div>
             </article>
             <div class="self-center mt-4 pb-6">
-                <button class="bg-[rgb(45,168,139)] py-2 px-20 rounded-full text-white">
+                <button class="bg-[#1ce178] py-2 px-20 rounded-full text-white">
                     Crear Actividad
                 </button>
             </div>

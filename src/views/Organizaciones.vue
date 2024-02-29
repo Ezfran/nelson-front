@@ -1,6 +1,21 @@
 
-<script setup>
+<script>
     import HeaderComp from '../components/header.vue';
+    export default {
+        components: {
+            HeaderComp,
+        },
+        data() {
+            return {
+                option: true
+            };
+        },
+        methods: {
+            changeOption() {
+                this.option = !this.option;
+            },
+        },
+    };
 </script>
 
 <template>
@@ -29,8 +44,8 @@
             <article class="bg-[rgba(18,58,110,255)] mx-4 rounded-2xl py-4 px-2">
                 <header class="flex gap-4 text-white relative">
                     <h1 class="text-xl relative flex items-center gap-1 font-semibold">
-                        <span>
-                            &#9760;
+                        <span class="text-green-400">
+                            <i class="fa-solid fa-user"></i>
                         </span>
                             Los Mercenarios Oficial 2
                         <span class="bg-white text-black text-base font-semibold h-6 w-6 rounded-full flex items-center justify-center">
@@ -48,14 +63,15 @@
                             </span>
                         </div>
                     </div>
-                    <p class="absolute top-0 right-0">
+                    <button @click="changeOption()" class="absolute top-0 right-0">
                         2/10
-                        <span class="">
-                            &#10148;
+                        <span class="inline-block transform text-lg ml-2" :class="option ? 'rotate-90' : 'translate-y-[1.5px] -rotate-90'">
+                            &#10095;
                         </span>
-                    </p>
+                    </button>
                 </header>
-                <div class="mt-3 flex items-center gap-2">
+
+                <div v-if="option" class="mt-3 flex items-center gap-2">
                     <p class="font-semibold text-white">
                         Puntos
                     </p>
@@ -71,6 +87,72 @@
                         </a>
                     </div>
                 </div>
+
+                <div v-if="!option" class="mt-3 rounded-2xl overflow-hidden">
+
+                    <header class="bg-[rgba(9,68,154,255)] py-2 px-3 text-white uppercase font-semibold flex justify-between items-center">
+                        <h3>
+                            Miembros
+                        </h3>
+                        <div class="flex gap-4">
+                            <h3>
+                                Rangos
+                            </h3>
+                            <h3>
+                                Opciones
+                            </h3>
+                        </div>
+                    </header>
+
+                    <section class=" py-2 px-3 flex w-full justify-between relative overflow-x-auto">
+                        <article class="text-[rgba(255,255,255,0.8)] font-semibold text-sm flex flex-col gap-4">
+                            <p>
+                               <span class="text-green-600">
+                                <i class="fa-solid fa-person"></i>
+                               </span> 
+                               Nelson Herrera
+                            </p>
+                            <p>
+                               <span class="text-green-600">
+                                <i class="fa-solid fa-person"></i>
+                               </span> 
+                               Nelson Herrera
+                            </p>
+                            <p>
+                               <span class="text-green-600">
+                                <i class="fa-solid fa-person"></i>
+                               </span> 
+                               Nelson Herrera
+                            </p>
+                        </article>
+                        <article class="text-[rgba(255,255,255,0.8)] font-semibold text-sm flex gap-20">
+                            <div class="flex flex-col gap-4 items-end text-end">
+                                <p>
+                                    Lider
+                                </p>
+                                <p>
+                                    Sub Lider
+                                </p>
+                                <p>
+                                    Mano Derecha
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-7">
+                                <button class="text-red-500 h-[8px]">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                                <button class="text-red-500 h-[8px]">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                                <button class="text-red-500 h-[8px]">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </article>
+                    </section>
+                    
+                </div>
+
             </article>
 
         </section>
